@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "TaskFlow Backend",
+            "request": "launch",
+            "mainClass": "com.josemanuel.taskflow.TaskflowBackendApplication",
+            "projectName": "taskflow-backend",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-TaskflowBackendApplication<taskflow-backend>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.josemanuel.taskflow_backend.TaskflowBackendApplication",
+            "projectName": "taskflow-backend",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
