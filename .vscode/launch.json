@@ -5,7 +5,7 @@
             "type": "java",
             "name": "TaskFlow Backend",
             "request": "launch",
-            "mainClass": "com.josemanuel.taskflow.TaskflowBackendApplication",
+            "mainClass": "com.josemanuel.taskflow_backend.TaskflowBackendApplication",
             "projectName": "taskflow-backend",
             "envFile": "${workspaceFolder}/.env"
         },
