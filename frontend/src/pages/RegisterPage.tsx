@@ -19,7 +19,7 @@ function RegisterPage() {
     setLoading(true)
     try {
       const response = await register({ name, email, password })
-      localStorage.setItem('token', response.token)
+      setToken(response.token)
       navigate('/board')
     } catch (err) {
       if (axios.isAxiosError(err) && err.response?.data?.message) {
