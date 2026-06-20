@@ -1,8 +1,10 @@
+// IMPORTS
 import { Routes, Route, Navigate } from 'react-router'
 import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
 import BoardPage from './pages/BoardPage'
 import ProtectedRoute from './components/ProtectedRoute'
+import ProjectBoardPage from './pages/ProjectBoardPage'
 
 function App() {
   return (
@@ -17,6 +19,14 @@ function App() {
             <BoardPage />
           </ProtectedRoute>
         }
+      />
+      <Route
+      path="/board/:projectId"
+      element={
+        <ProtectedRoute>
+          <ProjectBoardPage />
+        </ProtectedRoute>
+      }
       />
     </Routes>
   )

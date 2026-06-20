@@ -115,7 +115,8 @@ function BoardPage() {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="bg-slate-800 rounded-xl p-5 border border-slate-700 hover:border-emerald-500 transition-colors"
+                onClick={() => navigate(`/board/${project.id}`)}
+                className="bg-slate-800 rounded-xl p-5 border border-slate-700 hover:border-emerald-500 transition-colors cursor-pointer"
               >
                 <h3 className="font-semibold text-lg mb-1">{project.name}</h3>
                 <p className="text-sm text-slate-400">
