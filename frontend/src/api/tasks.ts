@@ -29,16 +29,17 @@ export async function createTask(projectId: string, data: TaskRequest): Promise<
 }
 
 export async function updateTaskStatus(
-    projectId: string,
-    taskId: string,
-    status: TaskStatus
+  projectId: string,
+  taskId: string,
+  status: TaskStatus
 ): Promise<TaskResponse> {
-    const response = await apiClient.patch<TaskResponse>(
-        '/api/projects/${projectId}/tasks/${taskId}/status', { status }
-    )
-    return response.data
+  const response = await apiClient.patch<TaskResponse>(
+    `/api/projects/${projectId}/tasks/${taskId}/status`,
+    { status }
+  )
+  return response.data
 }
 
 export async function deleteTask(projectId: string, taskId: string): Promise<void> {
-    await apiClient.delete('/api/projects/${projectId}/tasks/{taskId}')
+  await apiClient.delete(`/api/projects/${projectId}/tasks/${taskId}`)
 }
