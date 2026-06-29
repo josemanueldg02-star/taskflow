@@ -17,7 +17,7 @@ A full-stack Kanban project management application, built from scratch with a **
 
 ## 📸 Screenshots
 
-> _Add your screenshots to a `docs/` folder in the repo and they'll show up here._
+![TaskFlow Demo](docs/taskflow_login.gif)
 
 | Login | Projects | Kanban board |
 |-------|----------|--------------|
